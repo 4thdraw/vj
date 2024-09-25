@@ -13,11 +13,26 @@ const family = {
                   atext : "Figma",
                   href : "http://www.figma.com/4thdraw" 
             }
+            ,
+            {
+                  atext : "Figma",
+                  href : "http://www.figma.com/4thdraw" 
+            }
+           
           ]
 }
 
-console.log(family.faimilysite[0].atext, family.faimilysite[0].href);
+let  familytag = '';
+familytag +=`<h2>${family.d1text}</h2><ul>`;
 
-const mytag = `<a href="${family.faimilysite[0].href}">${family.faimilysite[0].atext}</a>`;
+for( x  of  family.faimilysite ){
+      familytag += `<li>${x.atext}</li>`
+}
+familytag +='</ul>';
 
-console.log(mytag);
+window.addEventListener('load', function(){
+      this.document.querySelector("#family")
+      .innerHTML =  familytag;
+})
+
+
