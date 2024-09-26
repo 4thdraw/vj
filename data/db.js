@@ -15,7 +15,7 @@ const family = {
             }
             ,
             {
-                  atext : "Figma",
+                  atext : "instagram",
                   href : "http://www.figma.com/4thdraw" 
             }
            
