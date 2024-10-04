@@ -22,6 +22,81 @@ const family = {
           ]
 }
 
+const mynavi = [
+      {
+        title: {
+          text: "첫번째",
+          link: ""
+        },
+        subMenu: [
+          { text: "소메뉴", link: "" },
+          { text: "소메뉴", link: "" },
+          { text: "소메뉴", link: "" }
+        ]
+      },
+      {
+        title: {
+          text: "두번째",
+          link: ""
+        },
+        subMenu: [
+          { text: "찾아오시는 길처럼 긴소메뉴", link: "" },
+          { text: "소메뉴", link: "" },
+          { text: "소메뉴", link: "" },
+          { text: "소메뉴", link: "" },
+          { text: "소메뉴", link: "" },
+          { text: "소메뉴", link: "" },
+          { text: "소메뉴", link: "" }
+        ]
+      },
+      {
+        title: {
+          text: "대메뉴",
+          link: ""
+        },
+        subMenu: [
+          { text: "소메뉴", link: "" },
+          { text: "소메뉴", link: "" },
+          { text: "소메뉴", link: "" },
+          { text: "소메뉴", link: "" },
+          { text: "소메뉴", link: "" }
+        ]
+      },
+      {
+        title: {
+          text: "대메뉴",
+          link: ""
+        },
+        subMenu: [
+          { text: "소메뉴", link: "" },
+          { text: "소메뉴", link: "" },
+          { text: "소메뉴", link: "" },
+          { text: "소메뉴", link: "" },
+          { text: "소메뉴", link: "" }
+        ]
+      },
+      {
+        title: {
+          text: "대메뉴",
+          link: ""
+        },
+        subMenu: [
+          { text: "소메뉴", link: "" },
+          { text: "소메뉴", link: "" },
+          { text: "소메뉴", link: "" },
+          { text: "소메뉴", link: "" },
+          { text: "소메뉴", link: "" }
+        ]
+      }
+    ];
+
+//setTimeout 
+const swiperBanner = [
+
+]
+
+
+
 
 
 
