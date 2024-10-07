@@ -13,26 +13,34 @@
   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
 
   <!-- 커스터마이징 -->
-  <link rel="stylesheet" href="../src/layout.css">
-  <link rel="stylesheet" href="../src/basic.min.css">
+  <!-- 상단, 하단, 퀵, 팝업 -->
+  <link rel="stylesheet" href="../src/layout/css/common.css">
+  <link rel="stylesheet" href="../src/layout/css/hd.min.css">
+  <link rel="stylesheet" href="../src/layout/css/ft.min.css">
+
+  <!-- 개별페이지 -->
+   <link rel="stylesheet" href="../src/layout/css/main.min.css">
 
 
   <!-- 데이터베이스 -->
   <script src="../data/db.js"></script>
   <!-- 데이터베이스를 화면에 연동출력 -->
-  <script src="../src/api.js"></script>
+  <script src="../src/api/navi.js"></script>
+
   <!-- 플러그인 -->
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
-  <!-- ui.js -->
-  <script src="../src/common.js"></script>
+  <!-- 공통 -->
+  <script src="../src/layout/js/common.js"></script>
 
-  
+  <!-- 개별페이지 -->
+   <script src="../src/layout/js/page_main.js"></script>
+
 </head>
-<body >
+<body class="slide-0">
 
 
-  <header id="hd" class="fixed-top bg-white border-bottom">
+  <header id="hd" class="fixed-top ">
     <div class="inner container-fluid d-flex  justify-content-between ">
         <h1 class="mb-0">
           <a href="" class="d-block  logo">
@@ -54,11 +62,14 @@
    <section id="mainBanner" class="overflow-hidden">
     <div class="swiper-container">
       <div class="swiper-wrapper">
-        <div class="swiper-slide vh-100 fs-5 itemcenter">Slide 1</div>
-        <div class="swiper-slide vh-100 bg-light itemcenter">Slide 2</div>
-        <div class="swiper-slide vh-100 bg-dark itemcenter">Slide 3</div>
-        <div class="swiper-slide vh-100 bg-primery itemcenter">Slide 4</div>
-        <div class="swiper-slide vh-100 bg-warning itemcenter">Slide 5</div>
+        <div class="swiper-slide vh-100 fs-5 itemcenter" data-btnmsg="회원특가 한달 배달무료">Slide 1</div>
+        <div class="swiper-slide vh-100 bg-light itemcenter" data-btnmsg="구독회원 100원">Slide 2</div>
+        <div class="swiper-slide vh-100 bg-dark itemcenter" data-btnmsg="배송지연안내">Slide 3</div>
+        <div class="swiper-slide vh-100 bg-primery itemcenter" data-btnmsg="단체할인">Slide 4</div>
+        <div class="swiper-slide vh-100 bg-warning itemcenter" data-btnmsg="B급상품 푼다!">Slide 5</div>
+      </div>
+      <div class="indicate position-absolute bottom-0 start-0 end-0 d-flex justify-content-center w-auto zup">
+
       </div>
     </div>
    </section>
