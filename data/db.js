@@ -25,8 +25,8 @@ const family = {
 const mynavi = [
       {
         title: {
-          text: "첫번째",
-          link: ""
+          text: "나의 소개 및 스킬",
+          link: "#about"
         },
         subMenu: [
           { text: "소메뉴", link: "" },
@@ -36,8 +36,8 @@ const mynavi = [
       },
       {
         title: {
-          text: "두번째",
-          link: ""
+          text: "작품",
+          link: "#portfolio"
         },
         subMenu: [
           { text: "찾아오시는 길처럼 긴소메뉴", link: "" },
@@ -51,8 +51,8 @@ const mynavi = [
       },
       {
         title: {
-          text: "대메뉴",
-          link: ""
+          text: "유투브",
+          link: "http://www.youtube.com"
         },
         subMenu: [
           { text: "소메뉴", link: "" },
@@ -64,8 +64,8 @@ const mynavi = [
       },
       {
         title: {
-          text: "대메뉴",
-          link: ""
+          text: "네이버",
+          link: "http://www.naver.com"
         },
         subMenu: [
           { text: "소메뉴", link: "" },
@@ -77,8 +77,8 @@ const mynavi = [
       },
       {
         title: {
-          text: "대메뉴",
-          link: ""
+          text: "연락",
+          link: "#contact"
         },
         subMenu: [
           { text: "소메뉴", link: "" },
