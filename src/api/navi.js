@@ -35,7 +35,7 @@ window.addEventListener('load', function(){
 
   //패밀리노출
   this.document.querySelector("#family h2").addEventListener('click', function(){
-    this.classList.toggle('open');
+    this.parentNode.classList.toggle('open');
   })
 
 
