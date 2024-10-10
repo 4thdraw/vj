@@ -14,3 +14,14 @@
     }
   }
 }
+
+#faqcontent{
+  dt{
+    &.expand{
+      color:red !important;
+      + dd{
+          display: block !important;
+      }
+    }
+  }
+}

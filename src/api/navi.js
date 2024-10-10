@@ -17,20 +17,38 @@ window.addEventListener('load', function(){
              }
              navitarget.innerHTML = navitag;
 
-
   //호출영역
   this.document.querySelector("#family h2").innerHTML = family.d1text;
 
   let familylist  = '';
 
-  // for(x in family.faimilysite ){
-  //     familylist += `<li>${family.faimilysite[x].atext}</li>`;
-  // }
-
   for(x of family.faimilysite ){
     familylist += `<li>${x.atext}</li>`;
   }
   this.document.querySelector("#family ul").innerHTML = familylist;
+
+ //faq
+ 
+ let faqtag = ""; // 값변경가능한 변수를 선언
+ const faqtarget = this.document.querySelector("#faqcontent  .content"); 
+
+  faqtag += `<dl class="container py-5">`;
+  for(x of faqcontent){
+    faqtag += `<dt class="border-bottom py-3">${x.faqQ}</dt>
+                   <dd class="py-4 d-none">`;
+                   const faqcontentArr = x.faqA.split("|");                  
+                  for(j of faqcontentArr){
+                    faqtag +=`<span class='d-block'> ${j} </span>`;
+                  }                    
+    faqtag += `</dd>`;
+            }
+  faqtag += `</dl>`;
+  faqtarget.innerHTML = faqtag;
+
+
+  
+
+
 
 
   //패밀리노출
@@ -39,8 +57,14 @@ window.addEventListener('load', function(){
   })
 
 
+  //동적객체 = 이벤트에 저장하는 식 불가
+  const faqdts = document.querySelectorAll("#faqcontent  .content dt");
 
-
+  faqdts.forEach(function(el, idx){         
+          el.addEventListener('click', function(){
+            this.classList.toggle('expand')
+          })
+  })
   
  
 
